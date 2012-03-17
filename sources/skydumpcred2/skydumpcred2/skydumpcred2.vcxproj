@@ -1,0 +1,146 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="common.c" />
+    <ClCompile Include="crypto\crc32\crc32.c" />
+    <ClCompile Include="crypto\md5\md5.c" />
+    <ClCompile Include="crypto\rijndael\rijndael.c" />
+    <ClCompile Include="crypto\sha1\sha.c" />
+    <ClCompile Include="miracl_lib\mraes.c" />
+    <ClCompile Include="miracl_lib\mralloc.c" />
+    <ClCompile Include="miracl_lib\mrarth0.c" />
+    <ClCompile Include="miracl_lib\mrarth1.c" />
+    <ClCompile Include="miracl_lib\mrarth2.c" />
+    <ClCompile Include="miracl_lib\mrarth3.c" />
+    <ClCompile Include="miracl_lib\mrbits.c" />
+    <ClCompile Include="miracl_lib\mrbrick.c" />
+    <ClCompile Include="miracl_lib\mrbuild.c" />
+    <ClCompile Include="miracl_lib\mrcore.c" />
+    <ClCompile Include="miracl_lib\mrcrt.c" />
+    <ClCompile Include="miracl_lib\mrcurve.c" />
+    <ClCompile Include="miracl_lib\mrdouble.c" />
+    <ClCompile Include="miracl_lib\mrebrick.c" />
+    <ClCompile Include="miracl_lib\mrec2m.c" />
+    <ClCompile Include="miracl_lib\mrecn2.c" />
+    <ClCompile Include="miracl_lib\mrfast.c" />
+    <ClCompile Include="miracl_lib\mrflash.c" />
+    <ClCompile Include="miracl_lib\mrflsh1.c" />
+    <ClCompile Include="miracl_lib\mrflsh2.c" />
+    <ClCompile Include="miracl_lib\mrflsh3.c" />
+    <ClCompile Include="miracl_lib\mrflsh4.c" />
+    <ClCompile Include="miracl_lib\mrfrnd.c" />
+    <ClCompile Include="miracl_lib\mrgcd.c" />
+    <ClCompile Include="miracl_lib\mrgcm.c" />
+    <ClCompile Include="miracl_lib\mrgf2m.c" />
+    <ClCompile Include="miracl_lib\mrio1.c" />
+    <ClCompile Include="miracl_lib\mrio2.c" />
+    <ClCompile Include="miracl_lib\mrjack.c" />
+    <ClCompile Include="miracl_lib\mrlucas.c" />
+    <ClCompile Include="miracl_lib\mrmonty.c" />
+    <ClCompile Include="miracl_lib\mrmuldv.c" />
+    <ClCompile Include="miracl_lib\mrpi.c" />
+    <ClCompile Include="miracl_lib\mrpower.c" />
+    <ClCompile Include="miracl_lib\mrprime.c" />
+    <ClCompile Include="miracl_lib\mrrand.c" />
+    <ClCompile Include="miracl_lib\mrround.c" />
+    <ClCompile Include="miracl_lib\mrscrt.c" />
+    <ClCompile Include="miracl_lib\mrshs.c" />
+    <ClCompile Include="miracl_lib\mrshs256.c" />
+    <ClCompile Include="miracl_lib\mrshs512.c" />
+    <ClCompile Include="miracl_lib\mrsmall.c" />
+    <ClCompile Include="miracl_lib\mrsroot.c" />
+    <ClCompile Include="miracl_lib\mrstrong.c" />
+    <ClCompile Include="miracl_lib\mrxgcd.c" />
+    <ClCompile Include="miracl_lib\mrzzn2.c" />
+    <ClCompile Include="miracl_lib\mrzzn2b.c" />
+    <ClCompile Include="miracl_lib\mrzzn3.c" />
+    <ClCompile Include="skylogin.c" />
+    <ClCompile Include="skype_cred.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="common.h" />
+    <ClInclude Include="crypto\miracl\miracl.h" />
+    <ClInclude Include="crypto\miracl\mirdef.h" />
+    <ClInclude Include="skype_cred.h" />
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{C69E2523-14E7-491B-93E7-11E258127273}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>skydumpcred2</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <IncludePath>$(SolutionDir)skydumpcred2\crypto;$(SolutionDir)skydumpcred2\crypto\miracl;$(SolutionDir)skydumpcred2\crypto\sha1;$(IncludePath)</IncludePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <IncludePath>$(SolutionDir)skydumpcred2\crypto;$(SolutionDir)skydumpcred2\crypto\miracl;$(SolutionDir)skydumpcred2\crypto\sha1;$(VCInstallDir)include;$(VCInstallDir)atlmfc\include;$(WindowsSdkDir)include;$(FrameworkSDKDir)\include;</IncludePath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

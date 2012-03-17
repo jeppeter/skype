@@ -1,0 +1,209 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <SccProjectName />
+    <SccLocalPath />
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.Cpp.UpgradeFromVC60.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.Cpp.UpgradeFromVC60.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>.\Release\</OutDir>
+    <IntDir>.\Release\</IntDir>
+    <LinkIncremental>false</LinkIncremental>
+    <IncludePath>$(SolutionDir)include\;$(IncludePath)</IncludePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>.\Debug\</OutDir>
+    <IntDir>.\Debug\</IntDir>
+    <LinkIncremental>true</LinkIncremental>
+    <IncludePath>$(SolutionDir)include\;$(IncludePath)</IncludePath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <StringPooling>true</StringPooling>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <Optimization>MaxSpeed</Optimization>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AssemblerListingLocation>.\Release\</AssemblerListingLocation>
+      <PrecompiledHeaderOutputFile>.\Release\skypkt.pch</PrecompiledHeaderOutputFile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <PrecompiledHeaderFile>stdafx.h</PrecompiledHeaderFile>
+      <ObjectFileName>.\Release\</ObjectFileName>
+      <ProgramDataBaseFileName>.\Release\</ProgramDataBaseFileName>
+    </ClCompile>
+    <Midl>
+      <TypeLibraryName>.\Release\skypkt.tlb</TypeLibraryName>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0809</Culture>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+    <Bscmake>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <OutputFile>.\Release\skypkt.bsc</OutputFile>
+    </Bscmake>
+    <Link>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <SubSystem>Console</SubSystem>
+      <OutputFile>.\Release\skypkt.exe</OutputFile>
+      <AdditionalDependencies>odbc32.lib;odbccp32.lib;ws2_32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <InlineFunctionExpansion>Default</InlineFunctionExpansion>
+      <FunctionLevelLinking>false</FunctionLevelLinking>
+      <Optimization>Disabled</Optimization>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <WarningLevel>Level3</WarningLevel>
+      <MinimalRebuild>true</MinimalRebuild>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AssemblerListingLocation>.\Debug\</AssemblerListingLocation>
+      <PrecompiledHeaderOutputFile>.\Debug\skypkt.pch</PrecompiledHeaderOutputFile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <ObjectFileName>.\Debug\</ObjectFileName>
+      <ProgramDataBaseFileName>.\Debug\</ProgramDataBaseFileName>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+    </ClCompile>
+    <Midl>
+      <TypeLibraryName>.\Debug\skypkt.tlb</TypeLibraryName>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0809</Culture>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+    <Bscmake>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <OutputFile>.\Debug\skypkt.bsc</OutputFile>
+    </Bscmake>
+    <Link>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Console</SubSystem>
+      <OutputFile>.\Debug\skypkt.exe</OutputFile>
+      <AdditionalDependencies>odbc32.lib;odbccp32.lib;ws2_32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="blob1.c" />
+    <ClCompile Include="blob1s.c" />
+    <ClCompile Include="blob2.c" />
+    <ClCompile Include="blob2s.c" />
+    <ClCompile Include="blob3s.c" />
+    <ClCompile Include="blob4s.c" />
+    <ClCompile Include="blob_enc.c" />
+    <ClCompile Include="blob_newblk.c" />
+    <ClCompile Include="crc32_util.c" />
+    <ClCompile Include="crypto.c" />
+    <ClCompile Include="decode41.c" />
+    <ClCompile Include="Expand_IV.c" />
+    <ClCompile Include="miracl_lib\mraes.c" />
+    <ClCompile Include="miracl_lib\mralloc.c" />
+    <ClCompile Include="miracl_lib\mrarth0.c" />
+    <ClCompile Include="miracl_lib\mrarth1.c" />
+    <ClCompile Include="miracl_lib\mrarth2.c" />
+    <ClCompile Include="miracl_lib\mrarth3.c" />
+    <ClCompile Include="miracl_lib\mrbits.c" />
+    <ClCompile Include="miracl_lib\mrbrick.c" />
+    <ClCompile Include="miracl_lib\mrbuild.c" />
+    <ClCompile Include="miracl_lib\mrcore.c" />
+    <ClCompile Include="miracl_lib\mrcrt.c" />
+    <ClCompile Include="miracl_lib\mrcurve.c" />
+    <ClCompile Include="miracl_lib\mrdouble.c" />
+    <ClCompile Include="miracl_lib\mrebrick.c" />
+    <ClCompile Include="miracl_lib\mrec2m.c" />
+    <ClCompile Include="miracl_lib\mrecn2.c" />
+    <ClCompile Include="miracl_lib\mrfast.c" />
+    <ClCompile Include="miracl_lib\mrflash.c" />
+    <ClCompile Include="miracl_lib\mrflsh1.c" />
+    <ClCompile Include="miracl_lib\mrflsh2.c" />
+    <ClCompile Include="miracl_lib\mrflsh3.c" />
+    <ClCompile Include="miracl_lib\mrflsh4.c" />
+    <ClCompile Include="miracl_lib\mrfrnd.c" />
+    <ClCompile Include="miracl_lib\mrgcd.c" />
+    <ClCompile Include="miracl_lib\mrgcm.c" />
+    <ClCompile Include="miracl_lib\mrgf2m.c" />
+    <ClCompile Include="miracl_lib\mrio1.c" />
+    <ClCompile Include="miracl_lib\mrio2.c" />
+    <ClCompile Include="miracl_lib\mrjack.c" />
+    <ClCompile Include="miracl_lib\mrlucas.c" />
+    <ClCompile Include="miracl_lib\mrmonty.c" />
+    <ClCompile Include="miracl_lib\mrmuldv.c" />
+    <ClCompile Include="miracl_lib\mrpi.c" />
+    <ClCompile Include="miracl_lib\mrpower.c" />
+    <ClCompile Include="miracl_lib\mrprime.c" />
+    <ClCompile Include="miracl_lib\mrrand.c" />
+    <ClCompile Include="miracl_lib\mrround.c" />
+    <ClCompile Include="miracl_lib\mrscrt.c" />
+    <ClCompile Include="miracl_lib\mrshs.c" />
+    <ClCompile Include="miracl_lib\mrshs256.c" />
+    <ClCompile Include="miracl_lib\mrshs512.c" />
+    <ClCompile Include="miracl_lib\mrsmall.c" />
+    <ClCompile Include="miracl_lib\mrsroot.c" />
+    <ClCompile Include="miracl_lib\mrstrong.c" />
+    <ClCompile Include="miracl_lib\mrxgcd.c" />
+    <ClCompile Include="miracl_lib\mrzzn2.c" />
+    <ClCompile Include="miracl_lib\mrzzn2b.c" />
+    <ClCompile Include="miracl_lib\mrzzn3.c" />
+    <ClCompile Include="miramax.c" />
+    <ClCompile Include="restore_key.c" />
+    <ClCompile Include="rijndael.c" />
+    <ClCompile Include="sha.c" />
+    <ClCompile Include="skypkt.c" />
+    <ClCompile Include="sock_comm.c" />
+    <ClCompile Include="tcp_sess1.c" />
+    <ClCompile Include="tcp_setup.c" />
+    <ClCompile Include="util.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="decode41.h" />
+    <ClInclude Include="defs.h" />
+    <ClInclude Include="Expand_IV.h" />
+    <ClInclude Include="miracl.h" />
+    <ClInclude Include="mirdef.h" />
+    <ClInclude Include="Process_IV.h" />
+    <ClInclude Include="rijndael.h" />
+    <ClInclude Include="sha.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

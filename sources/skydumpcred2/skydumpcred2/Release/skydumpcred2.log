@@ -1,0 +1,168 @@
+﻿Build started 23.07.2011 2:10:34.
+     1>Project "C:\vcnet_proj\skydumpcred2\skydumpcred2\skydumpcred2.vcxproj" on node 2 (rebuild target(s)).
+     1>_PrepareForClean:
+         Deleting file "Release\skydumpcred2.lastbuildstate".
+       InitializeBuildStatus:
+         Creating "Release\skydumpcred2.unsuccessfulbuild" because "AlwaysCreate" was specified.
+       ClCompile:
+         c:\Program Files\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /Zi /nologo /W3 /WX- /O2 /Oi /Oy- /GL /D WIN32 /D NDEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm- /EHsc /MT /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Release\\" /Fd"Release\vc100.pdb" /Gd /TC /analyze- /errorReport:prompt common.c crypto\crc32\crc32.c crypto\md5\md5.c crypto\rijndael\rijndael.c crypto\sha1\sha.c miracl_lib\mraes.c miracl_lib\mralloc.c miracl_lib\mrarth0.c miracl_lib\mrarth1.c miracl_lib\mrarth2.c miracl_lib\mrarth3.c miracl_lib\mrbits.c miracl_lib\mrbrick.c miracl_lib\mrbuild.c miracl_lib\mrcore.c miracl_lib\mrcrt.c miracl_lib\mrcurve.c miracl_lib\mrdouble.c miracl_lib\mrebrick.c miracl_lib\mrec2m.c miracl_lib\mrecn2.c miracl_lib\mrfast.c miracl_lib\mrflash.c miracl_lib\mrflsh1.c miracl_lib\mrflsh2.c miracl_lib\mrflsh3.c miracl_lib\mrflsh4.c miracl_lib\mrfrnd.c miracl_lib\mrgcd.c miracl_lib\mrgcm.c miracl_lib\mrgf2m.c miracl_lib\mrio1.c miracl_lib\mrio2.c miracl_lib\mrjack.c miracl_lib\mrlucas.c miracl_lib\mrmonty.c miracl_lib\mrmuldv.c miracl_lib\mrpi.c miracl_lib\mrpower.c miracl_lib\mrprime.c miracl_lib\mrrand.c miracl_lib\mrround.c miracl_lib\mrscrt.c miracl_lib\mrshs.c miracl_lib\mrshs256.c miracl_lib\mrshs512.c miracl_lib\mrsmall.c miracl_lib\mrsroot.c miracl_lib\mrstrong.c miracl_lib\mrxgcd.c miracl_lib\mrzzn2.c miracl_lib\mrzzn2b.c miracl_lib\mrzzn3.c skylogin.c skype_cred.c
+         common.c
+         crc32.c
+         md5.c
+         rijndael.c
+         sha.c
+         mraes.c
+         mralloc.c
+         mrarth0.c
+         mrarth1.c
+         mrarth2.c
+         mrarth3.c
+         mrbits.c
+         mrbrick.c
+         mrbuild.c
+         mrcore.c
+         mrcrt.c
+         mrcurve.c
+         mrdouble.c
+         mrebrick.c
+         mrec2m.c
+         Compiling...
+         mrecn2.c
+         mrfast.c
+         mrflash.c
+         mrflsh1.c
+         mrflsh2.c
+         mrflsh3.c
+         mrflsh4.c
+         mrfrnd.c
+         mrgcd.c
+         mrgcm.c
+         mrgf2m.c
+     1>miracl_lib\mrgf2m.c(350): warning C4101: 'k' : unreferenced local variable
+     1>miracl_lib\mrgf2m.c(612): warning C4101: 'r' : unreferenced local variable
+     1>miracl_lib\mrgf2m.c(612): warning C4101: 't' : unreferenced local variable
+     1>miracl_lib\mrgf2m.c(611): warning C4101: 'j' : unreferenced local variable
+         mrio1.c
+         mrio2.c
+         mrjack.c
+         mrlucas.c
+         mrmonty.c
+         mrmuldv.c
+         mrpi.c
+         mrpower.c
+         mrprime.c
+         Compiling...
+         mrrand.c
+         mrround.c
+         mrscrt.c
+         mrshs.c
+         mrshs256.c
+         mrshs512.c
+         mrsmall.c
+         mrsroot.c
+         mrstrong.c
+         mrxgcd.c
+         mrzzn2.c
+         mrzzn2b.c
+         mrzzn3.c
+         skylogin.c
+         skype_cred.c
+     1>skype_cred.c(101): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\Program Files\Microsoft Visual Studio 10.0\VC\include\stdio.h(234) : see declaration of 'fopen'
+     1>skype_cred.c(124): warning C4996: 'sscanf': This function or variable may be unsafe. Consider using sscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\Program Files\Microsoft Visual Studio 10.0\VC\include\stdio.h(325) : see declaration of 'sscanf'
+     1>skype_cred.c(165): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\Program Files\Microsoft Visual Studio 10.0\VC\include\stdio.h(234) : see declaration of 'fopen'
+     1>skype_cred.c(167): warning C4101: 'j' : unreferenced local variable
+     1>skype_cred.c(261): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\Program Files\Microsoft Visual Studio 10.0\VC\include\stdio.h(371) : see declaration of 'sprintf'
+       Link:
+         c:\Program Files\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\vcnet_proj\skydumpcred2\Release\skydumpcred2.exe" /INCREMENTAL:NO /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /ManifestFile:"Release\skydumpcred2.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"C:\vcnet_proj\skydumpcred2\Release\skydumpcred2.pdb" /SUBSYSTEM:CONSOLE /OPT:REF /OPT:ICF /LTCG /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\vcnet_proj\skydumpcred2\Release\skydumpcred2.lib" /MACHINE:X86 Release\common.obj
+         Release\crc32.obj
+         Release\md5.obj
+         Release\rijndael.obj
+         Release\sha.obj
+         Release\mraes.obj
+         Release\mralloc.obj
+         Release\mrarth0.obj
+         Release\mrarth1.obj
+         Release\mrarth2.obj
+         Release\mrarth3.obj
+         Release\mrbits.obj
+         Release\mrbrick.obj
+         Release\mrbuild.obj
+         Release\mrcore.obj
+         Release\mrcrt.obj
+         Release\mrcurve.obj
+         Release\mrdouble.obj
+         Release\mrebrick.obj
+         Release\mrec2m.obj
+         Release\mrecn2.obj
+         Release\mrfast.obj
+         Release\mrflash.obj
+         Release\mrflsh1.obj
+         Release\mrflsh2.obj
+         Release\mrflsh3.obj
+         Release\mrflsh4.obj
+         Release\mrfrnd.obj
+         Release\mrgcd.obj
+         Release\mrgcm.obj
+         Release\mrgf2m.obj
+         Release\mrio1.obj
+         Release\mrio2.obj
+         Release\mrjack.obj
+         Release\mrlucas.obj
+         Release\mrmonty.obj
+         Release\mrmuldv.obj
+         Release\mrpi.obj
+         Release\mrpower.obj
+         Release\mrprime.obj
+         Release\mrrand.obj
+         Release\mrround.obj
+         Release\mrscrt.obj
+         Release\mrshs.obj
+         Release\mrshs256.obj
+         Release\mrshs512.obj
+         Release\mrsmall.obj
+         Release\mrsroot.obj
+         Release\mrstrong.obj
+         Release\mrxgcd.obj
+         Release\mrzzn2.obj
+         Release\mrzzn2b.obj
+         Release\mrzzn3.obj
+         Release\skylogin.obj
+         Release\skype_cred.obj
+         Generating code
+     1>c:\vcnet_proj\skydumpcred2\skydumpcred2\miracl_lib\mrarth1.c(505): warning C4731: 'mr_sdiv' : frame pointer register 'ebp' modified by inline assembly code
+     1>c:\vcnet_proj\skydumpcred2\skydumpcred2\miracl_lib\mrarth1.c(512): warning C4731: 'mr_sdiv' : frame pointer register 'ebp' modified by inline assembly code
+     1>c:\vcnet_proj\skydumpcred2\skydumpcred2\miracl_lib\mrarth1.c(518): warning C4731: 'mr_sdiv' : frame pointer register 'ebp' modified by inline assembly code
+     1>c:\vcnet_proj\skydumpcred2\skydumpcred2\miracl_lib\mrarth1.c(227): warning C4731: 'mr_pmul' : frame pointer register 'ebp' modified by inline assembly code
+     1>c:\vcnet_proj\skydumpcred2\skydumpcred2\miracl_lib\mrarth1.c(236): warning C4731: 'mr_pmul' : frame pointer register 'ebp' modified by inline assembly code
+     1>c:\vcnet_proj\skydumpcred2\skydumpcred2\miracl_lib\mrarth1.c(241): warning C4731: 'mr_pmul' : frame pointer register 'ebp' modified by inline assembly code
+     1>c:\vcnet_proj\skydumpcred2\skydumpcred2\miracl_lib\mrarth2.c(1273): warning C4731: 'divide' : frame pointer register 'ebp' modified by inline assembly code
+     1>c:\vcnet_proj\skydumpcred2\skydumpcred2\miracl_lib\mrarth2.c(1280): warning C4731: 'divide' : frame pointer register 'ebp' modified by inline assembly code
+     1>c:\vcnet_proj\skydumpcred2\skydumpcred2\miracl_lib\mrarth2.c(1282): warning C4731: 'divide' : frame pointer register 'ebp' modified by inline assembly code
+     1>c:\vcnet_proj\skydumpcred2\skydumpcred2\miracl_lib\mrarth2.c(1286): warning C4731: 'divide' : frame pointer register 'ebp' modified by inline assembly code
+     1>c:\vcnet_proj\skydumpcred2\skydumpcred2\miracl_lib\mrarth2.c(1290): warning C4731: 'divide' : frame pointer register 'ebp' modified by inline assembly code
+     1>c:\vcnet_proj\skydumpcred2\skydumpcred2\miracl_lib\mrarth2.c(247): warning C4731: 'multiply' : frame pointer register 'ebp' modified by inline assembly code
+     1>c:\vcnet_proj\skydumpcred2\skydumpcred2\miracl_lib\mrarth2.c(253): warning C4731: 'multiply' : frame pointer register 'ebp' modified by inline assembly code
+     1>c:\vcnet_proj\skydumpcred2\skydumpcred2\miracl_lib\mrarth2.c(255): warning C4731: 'multiply' : frame pointer register 'ebp' modified by inline assembly code
+     1>c:\vcnet_proj\skydumpcred2\skydumpcred2\miracl_lib\mrarth2.c(259): warning C4731: 'multiply' : frame pointer register 'ebp' modified by inline assembly code
+     1>c:\vcnet_proj\skydumpcred2\skydumpcred2\miracl_lib\mrarth2.c(263): warning C4731: 'multiply' : frame pointer register 'ebp' modified by inline assembly code
+     1>c:\vcnet_proj\skydumpcred2\skydumpcred2\miracl_lib\mrarth2.c(646): warning C4731: 'multiply' : frame pointer register 'ebp' modified by inline assembly code
+     1>c:\vcnet_proj\skydumpcred2\skydumpcred2\miracl_lib\mrarth2.c(652): warning C4731: 'multiply' : frame pointer register 'ebp' modified by inline assembly code
+     1>c:\vcnet_proj\skydumpcred2\skydumpcred2\miracl_lib\mrarth2.c(654): warning C4731: 'multiply' : frame pointer register 'ebp' modified by inline assembly code
+     1>c:\vcnet_proj\skydumpcred2\skydumpcred2\miracl_lib\mrarth2.c(658): warning C4731: 'multiply' : frame pointer register 'ebp' modified by inline assembly code
+     1>c:\vcnet_proj\skydumpcred2\skydumpcred2\miracl_lib\mrarth2.c(662): warning C4731: 'multiply' : frame pointer register 'ebp' modified by inline assembly code
+         Finished generating code
+         skydumpcred2.vcxproj -> C:\vcnet_proj\skydumpcred2\Release\skydumpcred2.exe
+       Manifest:
+         c:\Program Files\Microsoft SDKs\Windows\v7.0A\bin\mt.exe /nologo /verbose /outputresource:"C:\vcnet_proj\skydumpcred2\Release\skydumpcred2.exe;#1" /manifest Release\skydumpcred2.exe.intermediate.manifest
+       FinalizeBuildStatus:
+         Deleting file "Release\skydumpcred2.unsuccessfulbuild".
+         Touching "Release\skydumpcred2.lastbuildstate".
+     1>Done Building Project "C:\vcnet_proj\skydumpcred2\skydumpcred2\skydumpcred2.vcxproj" (rebuild target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:04.02
